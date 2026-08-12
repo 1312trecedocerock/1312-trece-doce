@@ -164,11 +164,10 @@ section{padding:80px 0}
 .single-links svg{width:16px;height:16px;fill:currentColor}
 /* VIDEO */
 .video-frame{
-  max-width:360px;margin:0 auto;aspect-ratio:9/16;border:3px solid var(--teal);
+  max-width:900px;margin:0 auto;aspect-ratio:16/9;border:3px solid var(--teal);
   background:#000;display:flex;align-items:center;justify-content:center;position:relative;
-  overflow:hidden;
+  background-size:cover;background-position:center;
 }
-.video-frame iframe{width:100%;height:100%;border:0;display:block}
 .play-btn{
   width:80px;height:80px;border-radius:50%;background:var(--rojo);border:none;cursor:pointer;
   display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(214,69,37,.5);
@@ -350,8 +349,8 @@ footer p{color:var(--gris);font-size:14px;font-family:'Oswald';letter-spacing:.0
 <section id="video" class="alt">
   <div class="wrap">
     <div class="sec-title"><div class="kick">En pantalla</div><h2>Video <span>Oficial</span></h2></div>
-    <div class="video-frame">
-      <iframe src="https://www.youtube.com/embed/qccZvTrLAfk" title="1312 Trece Doce - Video difusion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="video-frame" style="background-image:linear-gradient(rgba(10,10,10,.4),rgba(10,10,10,.6)),url(\'assets/hero.jpg\')">
+      <button class="play-btn" title="Reproducir"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
     </div>
   </div>
 </section>
@@ -363,13 +362,13 @@ footer p{color:var(--gris);font-size:14px;font-family:'Oswald';letter-spacing:.0
     <p class="sec-sub">Segui a la banda en cada escenario. Las entradas se agotan rapido.</p>
     <div class="shows">
       <div class="show-row">
-        <div class="show-date"><span class="d">05</span>SEP<br>2026</div>
-        <div class="show-info"><h4>Centro Cultural Lezica</h4><p>Lezica 4266, CABA</p></div>
+        <div class="show-date"><span class="d">15</span>MAR<br>2026</div>
+        <div class="show-info"><h4>Presentacion del album</h4><p>Villa Libertad, Gral. San Martin</p></div>
         <a href="#" class="btn">Entradas</a>
       </div>
       <div class="show-row">
-        <div class="show-date"><span class="d">27</span>SEP<br>2026</div>
-        <div class="show-info"><h4>Dixon 2703 &middot; Live Shows &amp; Bar</h4><p>Juan Dixon 2703, Saenz Pena, Bs. As.</p></div>
+        <div class="show-date"><span class="d">05</span>ABR<br>2026</div>
+        <div class="show-info"><h4>Fecha a confirmar</h4><p>Buenos Aires</p></div>
         <a href="#" class="btn ghost">Info</a>
       </div>
       <div class="empty-tour">
