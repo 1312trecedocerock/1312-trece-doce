@@ -237,24 +237,6 @@ section{padding:80px 0}
 }
 .big-social a:hover{border-color:var(--rojo);background:var(--rojo);color:#fff;transform:translateY(-4px)}
 .big-social svg{width:22px;height:22px;fill:currentColor}
-/* GALERIA */
-.galeria-wrap{margin-top:60px}
-.galeria-title{font-family:'Anton';font-size:clamp(28px,4vw,44px);text-transform:uppercase;letter-spacing:.02em;color:var(--hueso);text-align:center;margin-bottom:8px}
-.galeria-title span{color:var(--rojo)}
-.galeria-sub{font-family:'Barlow Condensed';font-size:18px;color:var(--gris);text-align:center;margin-bottom:34px}
-.galeria{columns:4;column-gap:12px}
-.galeria img{width:100%;margin-bottom:12px;border-radius:6px;display:block;cursor:pointer;filter:grayscale(15%) brightness(.92);transition:filter .3s ease,transform .3s ease;break-inside:avoid}
-.galeria img:hover{filter:grayscale(0) brightness(1.05);transform:scale(1.02)}
-@media(max-width:900px){.galeria{columns:3}}
-@media(max-width:600px){.galeria{columns:2;column-gap:8px}.galeria img{margin-bottom:8px}}
-/* LIGHTBOX */
-.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out}
-.lb.open{display:flex}
-.lb img{max-width:92vw;max-height:88vh;border-radius:6px;box-shadow:0 0 40px rgba(0,0,0,.8)}
-.lb .lb-close{position:absolute;top:20px;right:28px;font-size:40px;color:#fff;cursor:pointer;font-family:'Anton';line-height:1}
-.lb .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:50px;color:#fff;cursor:pointer;user-select:none;padding:0 20px;opacity:.7;transition:opacity .2s}
-.lb .lb-nav:hover{opacity:1}
-.lb .lb-prev{left:10px}.lb .lb-next{right:10px}
 
 /* FOOTER */
 footer{background:#000;padding:40px 24px;text-align:center;border-top:1px solid #1e1a16}
@@ -607,33 +589,6 @@ footer p{color:var(--gris);font-size:14px;font-family:'Oswald';letter-spacing:.0
       <a href="mailto:1312trecedoce.rock@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M22 4H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-10 6.3L2 8.2V6l10 6.3L22 6v2.2z"/></svg></a>
     </div>
   </div>
-    <div class="galeria-wrap">
-      <div class="galeria-title">Galer<span>ia</span></div>
-      <p class="galeria-sub">La banda en vivo y en el estudio. Toca una foto para ampliar.</p>
-      <div class="galeria" id="galeria">
-      <img src="assets/foto-01.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(0)">
-      <img src="assets/foto-02.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(1)">
-      <img src="assets/foto-03.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(2)">
-      <img src="assets/foto-04.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(3)">
-      <img src="assets/foto-05.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(4)">
-      <img src="assets/foto-06.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(5)">
-      <img src="assets/foto-07.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(6)">
-      <img src="assets/foto-08.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(7)">
-      <img src="assets/foto-09.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(8)">
-      <img src="assets/foto-10.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(9)">
-      <img src="assets/foto-11.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(10)">
-      <img src="assets/foto-12.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(11)">
-      <img src="assets/foto-13.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(12)">
-      <img src="assets/foto-14.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(13)">
-      <img src="assets/foto-15.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(14)">
-      <img src="assets/foto-16.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(15)">
-      <img src="assets/foto-17.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(16)">
-      <img src="assets/foto-18.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(17)">
-      <img src="assets/foto-19.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(18)">
-      <img src="assets/foto-20.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(19)">
-      <img src="assets/foto-21.jpg" alt="1312 Trece Doce en vivo" loading="lazy" onclick="abrirLB(20)">
-      </div>
-    </div>
 </section>
 
 <footer>
@@ -641,20 +596,5 @@ footer p{color:var(--gris);font-size:14px;font-family:'Oswald';letter-spacing:.0
   <p>&copy; 2026 1312 TRECE DOCE &middot; VILLA LIBERTAD, GRAL. SAN MARTIN, BS. AS. &middot; TODOS LOS DERECHOS RESERVADOS</p>
 </footer>
 
-<div class="lb" id="lb" onclick="cerrarLB()">
-  <span class="lb-close" onclick="cerrarLB()">&times;</span>
-  <span class="lb-nav lb-prev" onclick="navLB(-1,event)">&#8249;</span>
-  <img id="lb-img" src="" alt="1312 Trece Doce" onclick="event.stopPropagation()">
-  <span class="lb-nav lb-next" onclick="navLB(1,event)">&#8250;</span>
-</div>
-<script>
-(function(){
-  var total=21, actual=0, lb=document.getElementById('lb'), lbImg=document.getElementById('lb-img');
-  window.abrirLB=function(i){actual=i;lbImg.src='assets/foto-'+String(i+1).padStart(2,'0')+'.jpg';lb.classList.add('open');};
-  window.cerrarLB=function(){lb.classList.remove('open');};
-  window.navLB=function(d,e){e.stopPropagation();actual=(actual+d+total)%total;lbImg.src='assets/foto-'+String(actual+1).padStart(2,'0')+'.jpg';};
-  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')cerrarLB();if(e.key==='ArrowRight')navLB(1,e);if(e.key==='ArrowLeft')navLB(-1,e);});
-})();
-</script>
 </body>
 </html>
